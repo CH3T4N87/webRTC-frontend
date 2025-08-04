@@ -1,0 +1,51 @@
+.ctm-container {
+    margin-top: 3rem;
+    width: 25rem;
+    height: 25rem;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-self: center;
+    /* align-items: center;
+     */
+}
+
+.authPage {
+    width: 100%;
+    height: 100%;
+}
+
+.authPage h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.authPage .inp-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inp-group .form-control{
+    width: 80%;
+}
+
+.curr-state{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.curr-state .btn{
+    font-size: 0.8rem;
+}
+.alertMsg{
+    position: absolute;
+    width: 100%;
+    height: 12%;
+    font-size: small;
+    text-align: center;
+    /* padding: 1.5rem; */
+}
+

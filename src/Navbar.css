@@ -1,0 +1,47 @@
+.navbar {
+    /* display: none; */
+    background: hsla(156, 20%, 5%, 1) !important;
+
+background: linear-gradient(315deg, hsla(156, 20%, 5%, 1) 0%, hsla(171, 27%, 24%, 1) 50%, hsla(158, 19%, 62%, 1) 100%) !important;
+
+background: -moz-linear-gradient(315deg, hsla(156, 20%, 5%, 1) 0%, hsla(171, 27%, 24%, 1) 50%, hsla(158, 19%, 62%, 1) 100%) !important;
+
+background: -webkit-linear-gradient(315deg, hsla(156, 20%, 5%, 1) 0%, hsla(171, 27%, 24%, 1) 50%, hsla(158, 19%, 62%, 1) 100%) !important;
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0A0F0D", endColorstr="#2D4F4A", GradientType=1) !important;
+
+    border-bottom: 2px solid black;
+}
+.navbar-brand{
+    color: white;
+}
+.nav-link{
+    color: #000000;
+}
+.navbar-brand:hover{
+    color: #8DB1A4 !important;
+}
+.fingerprint{
+    color: rgb(255, 255, 255);
+    /* font-size: 1.2rem; */
+}
+
+.auth-navbar-changes {
+    background: transparent !important;
+    backdrop-filter: blur(10px) !important;
+    background-color: rgba(132, 129, 129, 0.3) !important;
+    /* semi-transparent */
+
+}
+.auth-navbar-changes .navbar-toggler{
+    background-color: white;
+}
+
+@media  (max-width : 768px) {
+  .nav-link{
+    color: white;
+}
+.fingerprint{
+    color: white;
+}
+}
