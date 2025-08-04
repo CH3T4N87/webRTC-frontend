@@ -11,7 +11,7 @@ import sakhu from "../../../public/sakhu.jpg";
 import { use } from 'react';
 
 var connections = {};
-let server_url = "http://localhost:3000";
+let server_url = "https://livemudrix-backend.onrender.com/";
 const peerConfigConnections = {
     "iceServers": [
         { "urls": "stun:stun.l.google.com:19302" }
