@@ -46,7 +46,7 @@ function Navbar({ page }) {
     return (
         <nav className={`navbar navbar-expand-lg bg-body-tertiary custom-navbar ${page === "auth" ? "auth-navbar-changes":""}`}>
             <div class="container-fluid">
-                <a className="navbar-brand" href="/"><img src="/logo.png" />Hulululu App</a>
+                <a className="navbar-brand" href="/"><img src="/logo.png" />❤️ is IMPETUS</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

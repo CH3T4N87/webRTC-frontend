@@ -21,7 +21,7 @@ function Home() {
 
     const { addToUserHistory } = useContext(AuthContext);
     let handleJoinVideoCall = async () => {
-        await addToUserHistory(meetingCode);
+        // await addToUserHistory(meetingCode);
         navigate(`/${meetingCode}`)
     }
     useEffect(() => {
@@ -40,26 +40,13 @@ function Home() {
         fetchDetails();
     }, []);
 
-    let handleHover = () =>{
-        setHoverMsg(purana => purana + 1);
-        if(hoverMsg < 2){
-            setNewMeet("Soch le ekbar");
-        }else if(hoverMsg > 3){
-            setNewMeet("Bade dheet ho yrr tum");
-        }else if(hoverMsg >= 2){
-            setNewMeet("bar bar hover mat kr")
-        }
-        setTimeout(()=>{
-            setNewMeet("Create a New Meet")
-        },2000)
-    }
 
     return (
         <div className="home-page">
             <div className="top-bar">
 
 
-                <div><h5 className='text-white'>  Welcome, {userName === "Mudra" ? "Jaan ❤️" : userName}</h5></div>
+                <div><h5 className='text-white'>  Welcome, {userName}</h5></div>
                 
 
 
@@ -87,10 +74,10 @@ function Home() {
                     <img src={videoImg} alt="" />
                 </div>
                 <div className="sections home-right">
-                    <div><input className='form-control text-white' onChange={e => setMeetingCode(e.target.value)} id="outlined-basic" label="Meeting Code" variant="outlined" placeholder='Enter the Meeting Code (Sahi se dalna)' />
+                    <div><input className='form-control text-white' onChange={e => setMeetingCode(e.target.value)} id="outlined-basic" label="Meeting Code" variant="outlined" placeholder='Enter the Meeting Code' />
                     <button className='btn btn-secondary mt-2' onClick={handleJoinVideoCall} variant='contained'>Join</button>
                     <p className=''>want to host a meet ?</p>
-                    <button className='new-meet btn btn-secondary ' onMouseEnter={handleHover} onClick={()=> navigate(`/le-bhai-le-new-meeting-le-${Math.floor(Math.random()*100)}`)} >{newMeet}</button>
+                    <button className='new-meet btn btn-secondary '  onClick={()=> navigate(`/le-bhai-le-new-meeting-le-${Math.floor(Math.random()*100)}`)} >{newMeet}</button>
                     </div>
                     
                 </div>

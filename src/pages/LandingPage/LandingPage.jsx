@@ -26,7 +26,6 @@ function LandingPage() {
     return (
         <div className="landing-page">
             <Navbar/>
-            {sakharamMsg ? <p className="sakharam-msg alert alert-danger">Sakharam : Bhai ungli mat kr !!</p>:<></>}
             <div className="landing-page-hero">
                 <div className="landing-sections left-section">
                     <div  className="hero-img">
