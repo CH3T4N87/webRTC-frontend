@@ -44,7 +44,7 @@ function Navbar({ page }) {
         return Math.floor(Math.random() * 30);
     }
     return (
-        <nav className={`navbar navbar-expand-lg bg-body-tertiary custom-navbar ${page === "auth" ? "auth-navbar-changes":""}`}>
+        <nav className={`navbar navbar-expand-lg bg-body-tertiary custom-navbar ${page === "auth" ? "auth-navbar-changes" : ""}`}>
             <div class="container-fluid">
                 <a className="navbar-brand" href="/"><img src="/logo.png" />IMPETUS ❤️</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,14 +54,14 @@ function Navbar({ page }) {
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a href={`${quotes[getMeetingCode()]}`}><IconButton aria-label="fingerprint" color="secondary" a>
-                                <Fingerprint className='fingerprint'/>
+                                <Fingerprint className='fingerprint' />
                             </IconButton></a>
                             <button className={`nav-link ${page === "auth" ? "text-white " : ""}`} onClick={() => routeTo(`/${quotes[getMeetingCode()]}`)} aria-current="page" href="/auth">Guest</button>
                         </li>
 
                         <li className="nav-item">
                             <a href="/auth"><IconButton aria-label="fingerprint" color="success" a>
-                                <Fingerprint  className='fingerprint'/>
+                                <Fingerprint className='fingerprint' />
                             </IconButton></a>
                             <a className={`nav-link ${page === "auth" ? "text-white" : ""}`} href="/auth">
                                 Connect</a>
